@@ -1,0 +1,23 @@
+/* you can target tags in your svg in the same way as you target other html */
+.hameye{
+    /* but how you style it is slightly different..the eye is made of a stroke and a fill */
+    fill:aqua;
+    stroke: black;
+    stroke-width: 4px;
+}
+
+/* you can use transform and transition to animate onjects in SVG */
+.circle{
+    /* put the transition on all the circles */
+    transition:all 1s;
+    /* tell each group of circles to rotate around its center */
+    transform-origin: 50% 50%;
+}
+
+.circles:hover .c1{
+    transform: rotate(30deg);
+}
+
+.circles:hover .c2{
+    transform:rotate(60deg);
+}
